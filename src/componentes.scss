@@ -1,0 +1,86 @@
+.carrossel-calendario {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Carrossel grande */
+.carrossel.grande {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 600px;
+}
+
+.carrossel.grande img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+.carrossel.grande button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #10b981;
+  color: white;
+}
+
+/* Calendário lateral */
+.calendario-lateral {
+  flex: 1;
+}
+
+/* Timer */
+.timer {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Motion box */
+.motion-box {
+  width: 200px;
+  height: 100px;
+  background: #f97316;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Card de informações */
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.info-card .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Alertas */
+.alerta {
+  background: #ef4444;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,206 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.area-input {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.input-tarefa {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.botao {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+.botao-adicionar {
+  background: #4caf50;
+  color: white;
+}
+
+.botao-visualizar {
+  background: #2196f3;
+  color: white;
+}
+
+.botao-remover {
+  background: #f44336;
+  color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.escuro .card {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle {
+  width: 60px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.bolinha {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.toggle.ativo .bolinha {
+  left: 33px;
+}
+
+.icone {
+  position: absolute;
+  left: 70px;
+  top: 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 400px;
+  max-height: 70vh;
+  overflow-y: auto;
+  text-align: center;
+  color: #222;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.modal p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.escuro .modal {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.modal input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-botoes button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* TEMA ESCURO */
+
+.escuro {
+  background: #121212;
+  color: white;
+}
+
+.escuro .card {
+  background: #1e1e1e;
+}
+
+.escuro .modal {
+  background: #1e1e1e;
+  color: rgb(5, 5, 5);
+}
+
+.escuro .input-tarefa {
+  background: #2b2b2b;
+  color: rgb(0, 0, 0);
+  border: 1px solid #444;
+}
