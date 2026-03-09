@@ -16,22 +16,15 @@ function App() {
   ]);
 
   const [novaTarefa, setNovaTarefa] = useState("");
-
   const [modalAberto, setModalAberto] = useState(false);
-
   const [tarefaSelecionada, setTarefaSelecionada] = useState("");
-
   const [indexSelecionado, setIndexSelecionado] = useState(null);
-
   const [modoEdicao, setModoEdicao] = useState(false);
-
   const [textoEditado, setTextoEditado] = useState("");
 
   function adicionarTarefa() {
     if (!novaTarefa.trim()) return;
-
     setTarefas([...tarefas, novaTarefa]);
-
     setNovaTarefa("");
   }
 
@@ -49,13 +42,9 @@ function App() {
 
   function salvarEdicao() {
     const novasTarefas = [...tarefas];
-
     novasTarefas[indexSelecionado] = textoEditado;
-
     setTarefas(novasTarefas);
-
     setModoEdicao(false);
-
     setModalAberto(false);
   }
 
@@ -88,9 +77,9 @@ function App() {
             placeholder="Adicione uma tarefa"
           />
 
-          <button className="botao botao-adicionar" onClick={adicionarTarefa}>
-            Adicionar
-          </button>
+          <button 
+          className="botao botao-adicionar" 
+          onClick={adicionarTarefa}>Adicionar</button>
         </div>
         {tarefas.map((tarefa, index) => (
           <div className="card" key={index}>
@@ -100,16 +89,12 @@ function App() {
               <button
                 className="botao botao-visualizar"
                 onClick={() => visualizarTarefa(tarefa, index)}
-              >
-                Visualizar
-              </button>
+              >Visualiza</button>
 
               <button
                 className="botao botao-remover"
                 onClick={() => removerTarefa(index)}
-              >
-                Remover
-              </button>
+              >Remover</button>
             </div>
           </div>
         ))}

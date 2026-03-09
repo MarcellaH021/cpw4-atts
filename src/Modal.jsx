@@ -42,7 +42,6 @@ function Modal({
           <button onClick={fechar}>
             Fechar
           </button>
-
         </div>
       </div>
     </div>
